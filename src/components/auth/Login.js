@@ -19,13 +19,12 @@ const Login = () => {
     const { register, formState: { errors }, handleSubmit, getValues } = useForm();
     const emailvalue = getValues("email");
 
-    // const [token] = useToken(user || googleUser)
 
     let signInError;
     const navigate = useNavigate()
     const location = useLocation()
 
-    let from = location.state?.from?.pathname || "/";
+    // let from = location.state?.from?.pathname || "/";
 
 
 
@@ -41,9 +40,12 @@ const Login = () => {
     const onSubmit = data => {
         signInWithEmailAndPassword(data.email, data.password)
 
+
     };
 
-
+    if (user || googleUser) {
+        navigate("/")
+    }
 
     return (
 
@@ -128,7 +130,7 @@ const Login = () => {
 
                         {signInError}
                         <input type="submit" value={'LOGIN'} className='btn w-full btn-secondary text-white' />
-                        <Link to='/signup'><small>New To Friends Factory ? <span className='text-primary font-mono hover:underline'>Create an account</span></small></Link>
+                        <Link to='/signup'><small>New To inventory ? <span className='text-primary font-mono hover:underline'>Create an account</span></small></Link>
                         <br />
 
 

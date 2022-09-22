@@ -17,7 +17,7 @@ const UpdateProduct = () => {
 
         }
         console.log(updatedata);
-        fetch(`http://localhost:5000/api/v1/products/${id}`, {
+        fetch(`https://radiant-depths-53412.herokuapp.com/api/v1/products/${id}`, {
             "method": "PATCH",
             headers: {
                 "content-type": " application/json",

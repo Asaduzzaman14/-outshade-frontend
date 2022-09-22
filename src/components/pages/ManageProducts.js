@@ -9,7 +9,7 @@ const ManageProducts = () => {
     const [removeProducts, setRemoveProducts] = useState(null)
 
 
-    const { data: products, isLoading, refetch } = useQuery('manageProducts', () => fetch("http://localhost:5000/api/v1/products", {
+    const { data: products, isLoading, refetch } = useQuery('manageProducts', () => fetch("https://radiant-depths-53412.herokuapp.com/api/v1/products", {
         method: 'GET',
 
     }).then(res => res.json()));

@@ -16,7 +16,7 @@ const AddProduct = () => {
         }
 
         console.log(newProduct);
-        fetch('http://localhost:5000/api/v1/products', {
+        fetch('https://radiant-depths-53412.herokuapp.com/api/v1/products', {
             "method": "POST",
 
             body: JSON.stringify(newProduct)

@@ -8,7 +8,7 @@ const RemoveProducts = ({ setRemoveProducts, removeProducts, refetch }) => {
     console.log(_id);
 
     const handelDeleteTool = () => {
-        fetch(`http://localhost:5000/api/v1/products/${_id}`, {
+        fetch(`https://radiant-depths-53412.herokuapp.com/api/v1/products/${_id}`, {
             method: 'DELETE',
 
         })
