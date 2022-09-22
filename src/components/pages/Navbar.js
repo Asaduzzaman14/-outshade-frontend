@@ -17,8 +17,9 @@ const Navbar = () => {
 
     const menuItem = <>
         <li><Link className='rounded-lg text-xl' to='/home'>Home</Link></li>
-        <li><Link className='rounded-lg text-xl' to='/about'>About</Link></li>
         <li><Link className='rounded-lg text-xl' to='/add_product'>Add Product</Link></li>
+        <li><Link className='rounded-lg text-xl' to='/manage_products'>Manage Products</Link></li>
+        <li><Link className='rounded-lg text-xl' to='/about'>About</Link></li>
         <li><Link className='rounded-lg text-xl' to='/profile'>Profile</Link></li>
 
 

@@ -9,6 +9,7 @@ import Login from './components/auth/Login';
 import Signup from './components/shared/Signup';
 import Profile from './components/pages/Profile';
 import AddProduct from './components/pages/AddProduct';
+import ManageProducts from './components/pages/ManageProducts';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/add_product" element={<AddProduct />}></Route>
+
+        <Route path="/manage_products" element={<ManageProducts />}></Route>
+
+
         <Route path="/profile" element={<Profile />}></Route>
 
 

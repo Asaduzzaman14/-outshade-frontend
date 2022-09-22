@@ -7,13 +7,9 @@ const AllProducts = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch("product.json", {
-            method: 'GET',
-
-        })
+        fetch("http://localhost:5000/api/v1/products")
             .then(res => res.json())
-            .then(data => setProducts(data))
-
+            .then(data => setProducts(data.data))
 
     }, [])
 
@@ -26,7 +22,7 @@ const AllProducts = () => {
 
             <div className='grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-x-5'>
                 {
-                    products.map(product => <ProductCard
+                    products?.map(product => <ProductCard
                         product={product}
                         key={product._id}
                     > </ProductCard>
