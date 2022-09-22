@@ -10,6 +10,7 @@ import Signup from './components/shared/Signup';
 import Profile from './components/pages/Profile';
 import AddProduct from './components/pages/AddProduct';
 import ManageProducts from './components/pages/ManageProducts';
+import UpdateProduct from './components/pages/UpdateProduct';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
 
         <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/update/:id" element={<UpdateProduct />}></Route>
 
 
 

@@ -6,6 +6,7 @@ const RemoveProducts = ({ setRemoveProducts, removeProducts, refetch }) => {
 
     const { _id } = removeProducts;
     console.log(_id);
+
     const handelDeleteTool = () => {
         fetch(`http://localhost:5000/api/v1/products/${_id}`, {
             method: 'DELETE',

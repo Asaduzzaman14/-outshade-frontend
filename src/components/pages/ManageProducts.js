@@ -35,8 +35,7 @@ const ManageProducts = () => {
                                     <th>no.</th>
                                     <th>Image</th>
                                     <th>Name</th>
-                                    <th>min order quantity</th>
-                                    <th>abailavle quantity</th>
+                                    <th>price</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>

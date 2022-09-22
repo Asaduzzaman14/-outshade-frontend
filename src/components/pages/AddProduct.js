@@ -9,7 +9,7 @@ const AddProduct = () => {
 
         const newProduct = {
             name: e.target.ProductName.value,
-            desc: e.target.desc.value,
+            condition: e.target.condition.value,
             img: e.target.img.value,
             price: e.target.price.value,
 
@@ -42,7 +42,7 @@ const AddProduct = () => {
             <form onSubmit={handelFormSubmit}>
                 <input type="text" name='ProductName' placeholder="Product Name" className="input input-bordered input-md w-full max-w-sm mb-4" required />
                 <br />
-                <input type="text" name='desc' className="input input-bordered input-md w-full max-w-sm mb-4 " placeholder="Product description" required></input>
+                <input type="text" name='condition' className="input input-bordered input-md w-full max-w-sm mb-4 " placeholder="This is a new product" required></input>
                 <br />
                 <input type="text" name='img' className="input input-bordered input-md w-full max-w-sm mb-4 " placeholder="Img link" required></input>
                 <br />
